@@ -1,0 +1,53 @@
+{
+  "manageri": [
+    {
+      "ID": "msmaranda",
+      "nume": "Smaranda",
+      "preunume": "Marian",
+      "password": "qwe",
+      "rol": "manager",
+      "CNP": 165419846416,
+      "telefon": "+407546486451",
+      "oras": "Bucuresti",
+      "calificari": []
+    }
+  ],
+  "operatori": [
+    {
+      "ID": "astancu",
+      "nume": "Stancu",
+      "preunume": "Adrian",
+      "password": "qwe",
+      "rol": "operator",
+      "CNP": 165467486416,
+      "telefon": "+407879486451",
+      "oras": "Oradea",
+      "calificari": [
+        "frigotehnist"
+      ]
+    },
+    {
+      "ID": "1",
+      "nume": "1",
+      "prenume": "1",
+      "parola": "1",
+      "rol": "operator",
+      "CNP": "11",
+      "telefon": "1",
+      "oras": ""
+    }
+  ],
+  "gestionari": [
+    {
+      "ID": "aion",
+      "nume": "Ion",
+      "preunume": "Avram",
+      "password": "qwe",
+      "rol": "gestionar",
+      "CNP": 16594616416,
+      "telefon": "+407819165151",
+      "oras": "Bacau",
+      "calificari": []
+    }
+  ]
+}
