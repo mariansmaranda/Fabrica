@@ -25,8 +25,29 @@ class Menu:
                 Angajator.angajator_gestionar(self)
                 pass
             elif optiune == 3:
-                # with open("users.json", "r") as u:
-                #     angajati = json.load(u)
+                with open("users.json", "r") as u:
+                    angajati = json.load(u)
+                    print("Manageri")
+                    print(20 * "=")
+                    for i in angajati["manageri"]:
+                        j = f'{i["nume"]} {i["prenume"]}'
+                        print(j)
+                    print(20 * "=")
+                    print()
+                    print("Operatori")
+                    print(20 * "=")
+                    for k in angajati["operatori"]:
+                        l = f'{k["nume"]} {k["prenume"]}'
+                        print(l)
+                    print(20*"=")
+                    print()
+                    print("Gestionari")
+                    print(20 * "=")
+                    for m in angajati["gestionari"]:
+                        n = f'{m["nume"]} {m["prenume"]}'
+                        print(n)
+                    print(20 * "=")
+                    print()
                 pass
     def meniu_operator(self):
         while True:

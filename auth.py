@@ -9,33 +9,33 @@ class Auth:
         while True:
             global user
             user = input("User\n>").lower()
-            if user in self.users_dict["manageri"][0]["ID"]:
-                password = input("Password:\n>")
-                if password == self.users_dict["manageri"][0]["password"]:
-                    global functie
-                    functie = self.users_dict["manageri"][0]["rol"]
-                    print("Logged as Manager")
-                    Menu.meniu_manager(self)
+            for i in self.users_dict["manageri"]:
+                if user in i["ID"]:
+                    password = input("Password:\n>").lower()
+                    if password in i["password"]:
+                        print("Logged as Manager")
+                        Menu.meniu_manager(self)
+                    else:
+                        print("parola incorecta")
                     return user
-                else:
-                    print("Password incorrect")
-            elif user in self.users_dict["operatori"][0]["ID"]:
-                password = input("Password:\n>")
-                if password == self.users_dict["operatori"][0]["password"]:
-                    functie = self.users_dict["operatori"][0]["rol"]
-                    print("Logged as Operator")
-                    Menu.meniu_operator(self)
+            for j in self.users_dict["operatori"]:
+                if user in j["ID"]:
+                    password = input("Password:\n>").lower()
+                    if password in j["password"]:
+                        print("Logged as Operator")
+                        Menu.meniu_operator(self)
+                    else:
+                        print("parola incorecta")
                     return user
-                else:
-                    print("Password incorrect")
-            elif user in self.users_dict["gestionari"][0]["ID"]:
-                password = input("Password:\n>")
-                if password == self.users_dict["gestionari"][0]["password"]:
-                    functie = self.users_dict["gestionari"][0]["rol"]
-                    print("Logged as Gestionar")
-                    Menu.meniu_gestionar(self)
+            for k in self.users_dict["gestionari"]:
+                if user in k["ID"]:
+                    password = input("Password:\n>").lower()
+                    if password in k["password"]:
+                        print("Logged as Gestionar")
+                        Menu.meniu_gestionar(self)
+                    else:
+                        print("parola incorecta")
                     return user
-                else:
-                    print("Password incorrect")
+
             else:
                 print("User not found")

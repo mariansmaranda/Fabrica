@@ -7,14 +7,13 @@ class Angajator:
             data = json.load(json_file)
             temp = data["manageri"]
             y = {
-                "ID": input("ID Manager nou\n> "),
-                "nume": input("Nume manager nou\n> "),
-                "prenume" : input("Prenume Manager nou\n> "),
-                "parola": input("Parola Manager nou\n> "),
-                "rol": "manager",
+                "ID": input("ID Manager nou\n> ").lower(),
+                "nume": input("Nume manager nou\n> ").capitalize(),
+                "prenume" : input("Prenume Manager nou\n> ").capitalize(),
+                "password": "qwe",
                 "CNP": input("CNP Manager nou\n> "),
                 "telefon": input('Telefon Manager nou\n> '),
-                "oras": input("Oras Manager nou\n> ")
+                "oras": input("Oras Manager nou\n> ").capitalize()
                 }
             temp.append(y)
         with open("users.json", "w") as f:
@@ -25,11 +24,10 @@ class Angajator:
             data = json.load(json_file)
             temp = data["operatori"]
             y = {
-                "ID": input("ID Operator nou\n> "),
+                "ID": input("ID Operator nou\n> ".lower()),
                 "nume": input("Nume Operator nou\n> "),
                 "prenume" : input("Prenume Operator nou\n> "),
-                "parola": input("Parola Operator nou\n> "),
-                "rol": "operator",
+                "password": "qwe",
                 "CNP": input("CNP Operator nou\n> "),
                 "telefon": input('Telefon Operator nou\n> '),
                 "oras": input("Oras Operator nou\n> ")
@@ -43,11 +41,10 @@ class Angajator:
             data = json.load(json_file)
             temp = data["gestionari"]
             y = {
-                "ID": input("ID Gestionar nou\n> "),
+                "ID": input("ID Gestionar nou\n> ").lower(),
                 "nume": input("Nume Gestionar nou\n> "),
                 "prenume" : input("Prenume Gestionar nou\n> "),
-                "parola": input("Parola Gestionar nou\n> "),
-                "rol": "gestionar",
+                "password": "qwe",
                 "CNP": input("CNP Gestionar nou\n> "),
                 "telefon": input('Telefon Gestionar nou\n> '),
                 "oras": input("Oras Gestionar nou\n> ")

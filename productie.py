@@ -14,11 +14,12 @@ class Productie:
                     json.dump(date, g, indent=2)
             else:
                 stock_insuficient = "Nu sunt destule materiale in stoc!\nCere unui gestionar sa adauge materiale!"
-                return print(stock_insuficient)
+                return print(f"\n{stock_insuficient}\n ")
 
         with open('stocuri.json', 'w') as f:
             json.dump(data, f, indent=2)
-
+        print("Ai asamblat frigider")
+        print()
     def productie_cuptor_microunde(self):
         with open('stocuri.json.', "r") as f:
             data = json.load(f)
@@ -33,10 +34,13 @@ class Productie:
                     json.dump(date, g, indent=2)
             else:
                 stock_insuficient = "Nu sunt destule materiale in stoc!\nCere unui gestionar sa adauge materiale!"
-                return print(stock_insuficient)
+                return print(f"\n{stock_insuficient}\n ")
 
         with open('stocuri.json', 'w') as f:
             json.dump(data, f, indent=2)
+
+        print("Ai asamblat cuptor cu microunde")
+        print()
 
     def productie_aragaz(self):
         with open('stocuri.json.', "r") as f:
@@ -52,8 +56,9 @@ class Productie:
                     json.dump(date, g, indent=2)
             else:
                 stock_insuficient = "Nu sunt destule materiale in stoc!\nCere unui gestionar sa adauge materiale!"
-                return print(stock_insuficient)
+                return print(f"\n{stock_insuficient}\n ")
 
         with open('stocuri.json', 'w') as f:
             json.dump(data, f, indent=2)
-
+        print("Ai asamblat aragaz")
+        print()

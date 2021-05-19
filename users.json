@@ -3,23 +3,31 @@
     {
       "ID": "msmaranda",
       "nume": "Smaranda",
-      "preunume": "Marian",
+      "prenume": "Marian",
       "password": "qwe",
       "rol": "manager",
-      "CNP": 165419846416,
+      "CNP": "165419846416",
       "telefon": "+407546486451",
       "oras": "Bucuresti",
       "calificari": []
+    },
+    {
+      "ID": "olvia",
+      "nume": "Lvia",
+      "prenume": "Olanda",
+      "password": "qwe",
+      "CNP": "194535918",
+      "telefon": "9314851938591",
+      "oras": "Ciupesti"
     }
   ],
   "operatori": [
     {
       "ID": "astancu",
       "nume": "Stancu",
-      "preunume": "Adrian",
+      "prenume": "Adrian",
       "password": "qwe",
-      "rol": "operator",
-      "CNP": 165467486416,
+      "CNP": "165467486416",
       "telefon": "+407879486451",
       "oras": "Oradea",
       "calificari": [
@@ -27,24 +35,22 @@
       ]
     },
     {
-      "ID": "1",
-      "nume": "1",
-      "prenume": "1",
-      "parola": "1",
-      "rol": "operator",
-      "CNP": "11",
-      "telefon": "1",
-      "oras": ""
+      "ID": "avram",
+      "nume": "vram",
+      "prenume": "alin",
+      "password": "qwe",
+      "CNP": "13245093520",
+      "telefon": "07854328572",
+      "oras": "chiajna"
     }
   ],
   "gestionari": [
     {
       "ID": "aion",
       "nume": "Ion",
-      "preunume": "Avram",
+      "prenume": "Avram",
       "password": "qwe",
-      "rol": "gestionar",
-      "CNP": 16594616416,
+      "CNP": "16594616416",
       "telefon": "+407819165151",
       "oras": "Bacau",
       "calificari": []
