@@ -12,13 +12,13 @@
       "calificari": []
     },
     {
-      "ID": "olvia",
-      "nume": "Lvia",
-      "prenume": "Olanda",
+      "ID": "alaur",
+      "nume": "Laur",
+      "prenume": "Adrian",
       "password": "qwe",
-      "CNP": "194535918",
-      "telefon": "9314851938591",
-      "oras": "Ciupesti"
+      "CNP": "903148091384",
+      "telefon": "012490219",
+      "oras": "Bolintin"
     }
   ],
   "operatori": [
@@ -33,15 +33,6 @@
       "calificari": [
         "frigotehnist"
       ]
-    },
-    {
-      "ID": "avram",
-      "nume": "vram",
-      "prenume": "alin",
-      "password": "qwe",
-      "CNP": "13245093520",
-      "telefon": "07854328572",
-      "oras": "chiajna"
     }
   ],
   "gestionari": [
